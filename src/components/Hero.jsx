@@ -1,46 +1,55 @@
-import Button from "./ui/Button"    
-import InterActiveSpan from "./ui/InterActiveSpan"
+import Button from "./ui/Button";
+import InterActiveSpan from "./ui/InterActiveSpan";
 
 const Hero = () => {
   return (
-    <section className=" relative w-full flex justify-center overflow-hidden ">
+    <section className="relative w-full flex justify-center overflow-hidden bg-white">
 
-        <img src="/public/hero-first-img.png" alt="hero image"
-         className="absolute left-[1%] top-[60%] w-90 -translate-y-1/2 animate-floatLeft 
-         opacity-80 hover:opacity-100 transition hover:scale-105 "
-        />
+      {/* Left Floating Image */}
+      <img
+        src="/hero-first-img.png"
+        alt="hero image"
+        className="absolute left-1 top-[53%] md:top-[65%] w-40 md:w-90 -translate-y-1/2 animate-floatLeft 
+                   opacity-50 hover:opacity-100 transition hover:scale-105"
+      />
 
-        <img src="/public/hero-second-img.png" alt="hero image second"
-         className="absolute right-[1%] top-[85%] w-90 -translate-y-1/2 animate-floatRight 
-         opacity-80 hover:opacity-100 transition hover:scale-105 "
-        />
+      {/* Right Floating Image */}
+      <img
+        src="/hero-second-img.png"
+        alt="hero image second"
+        className="absolute right-1 top-[95%] md:top-[90%] w-40 md:w-90 -translate-y-1/2 animate-floatRight 
+                   opacity-50 hover:opacity-100 transition hover:scale-105"
+      />
 
-        <div className="w-full max-w-7xl px-10 py-16 text-center">
-            <p className="text-sm uppercase tracking-widest text-gray-500 mb-6">Creative Digital Agency</p>
+      {/* Hero Content */}
+      <div className="w-full max-w-7xl px-4 md:px-10 py-16 md:py-24 text-center">
+        
+        <p className="text-xs mt-4 md:text-sm uppercase tracking-widest text-gray-500 mb-4 md:mb-6">
+          Creative Digital Agency
+        </p>
 
-            <h1 className="text-7xl md:text-6xl font-bold leading-tight mb-8">
-                We build 
-                <br />
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-snug md:leading-tight mb-6 md:mb-8">
+          We build <br />
+          <InterActiveSpan className="text-purple-600 bg-yellow-200 rounded-xl px-4 md:px-6 py-1 md:py-2 shadow-xl mt-2 inline-block">
+            Digital
+          </InterActiveSpan>
+          <br />
+          Experiences that inspire
+        </h1>
 
-                <InterActiveSpan className="text-purple-600 bg-yellow-200 rounded-xl px-6 py-2 shadow-xl mt-4">
-                  Digital
-                </InterActiveSpan>
+        <p className="max-w-md md:max-w-2xl mx-auto text-gray-600 mb-6 md:mb-10 text-sm md:text-base">
+          Abstratto is a creative agency focused on design, animation and technology. We help brands grow through powerful visuals.
+        </p>
 
-                <br />
-                Experiences that inspire
-            </h1>
-
-            <p className="max-w-2xl mx-auto text-gray-600 mb-10">
-                Abstratto is a creative agency focused on design, animation and 
-                technology. We helps brands grow throw powerful visuals.
-            </p>
-
-            <div className='flex justify-center'>
-                <Button withArrow size='lg'>Get Started</Button>
-            </div>
+        <div className="flex justify-center">
+          <Button withArrow size="lg"
+          className="scale-90 md:scale-100"
+          >Get Started</Button>
         </div>
-    </section>
-  )
-}
 
-export default Hero
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

@@ -12,8 +12,8 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <section className="w-full flex justify-center py-24">
-      <div className="w-full max-w-7xl py-10 md:px-10 border-2 border-gray-200 rounded-xl overflow-hidden">
+    <section className="w-full flex justify-center   md:py-24">
+      <div className="w-full max-w-7xl px-12 py-8 md:px-10 border-2 border-gray-200 rounded-xl overflow-hidden">
 
         <h2 className="text-4xl font-bold mb-12 leading-tight">
           Our <span className="text-purple-600 ">Services</span>

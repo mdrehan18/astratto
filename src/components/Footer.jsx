@@ -9,7 +9,7 @@ import{
 const Footer = () => {
   return (
     <footer id='contact' className='w-full bg-black text-gray-300' >
-        <div className='w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-12'>
+        <div className='w-full max-w-7xl mx-auto px-12 md:px-6 py-10 md:py-10 grid grid-cols-1 md:grid-cols-4 gap-12'>
             <div>
                 <h2 className='text-2xl font-semibold text-white'>
                     <span className='text-purple-500'>Astratto</span>
@@ -22,7 +22,7 @@ const Footer = () => {
 
             <div>
                 <h3 className='text-lg text-white mb-4'>Quick Links</h3>
-                <ul className='space-y-3 text-sm'>
+                <ul className='grid grid-cols-2 space-y-3 text-sm'>
                     <li className="relative w-fit cursor-pointer group">
                         <span className="text-sm transition-colors duration-300 group-hover:text-purple-400">
                             Home
@@ -58,7 +58,7 @@ const Footer = () => {
 
             <div>
                 <h3 className='text-lg text-white mb-4'>Services</h3>
-                <ul className='space-y-3 text-sm'>
+                <ul className='grid grid-cols-2 space-y-3 text-sm'>
 
                     <li className='relative w-fit cursor-pointer group'>
                         <span className='text-sm transition-colors duration-300 group-hover:text-purple-400'>Brand Identity</span>
@@ -86,12 +86,12 @@ const Footer = () => {
 
             <div>
                 <h3 className='text-lg text-white mb-4'>Contact</h3>
-                <ul className='space-y-3 text-sm'>
+                <ul className='grid grid-cols-2 space-y-3 text-sm'>
                     <li>mdr106123@gmail.com</li>
                     <li>📍Jharkhand, India</li>
                 </ul>
 
-                <div className='flex gap-4 mt-6'>
+                <div className='flex gap-14 md:gap-4 mt-6'>
                     <a href="#" className='group relative'>
                         <FaInstagram 
                         size={28} 
