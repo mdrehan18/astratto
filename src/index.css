@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@keyframes floatLeft {
+  0% {
+    transform: translateY(-50%) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50%) translateY(-30px) rotate(-6deg);
+  }
+  100% {
+    transform: translateY(-50%) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes floatRight {
+  0% {
+    transform: translateY(-50%) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50%) translateY(30px) rotate(6deg);
+  }
+  100% {
+    transform: translateY(-50%) translateY(0) rotate(0deg);
+  }
+}
+
+.animate-floatLeft {
+  animation: floatLeft 5s ease-in-out infinite;
+}
+
+.animate-floatRight {
+  animation: floatRight 6s ease-in-out infinite;
+}
+
+.digital-wave {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+/* Wavy line */
+.digital-wave::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 10px;
+
+  background: url("data:image/svg+xml,%3Csvg width='120' height='15' viewBox='0 0 120 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5 Q 15 0 30 5 T 60 5 T 90 5 T 120 5' fill='none' stroke='%23D4AF37' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+
+  animation: waveMove 2.5s linear infinite;
+}
+
+@keyframes waveMove {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 120px;
+  }
+}
+
+
+/* side cards */
+.swiper-slide .inner-card {
+  transform: scale(0.95);
+  opacity: 0.8;
+  transition: all 0.5s ease;
+}
+
+/* CENTER card */
+.swiper-slide-active .inner-card {
+  transform: scale(1.1);
+  opacity: 1;
+  background: #7e22ce;
+  color: white;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide-active .inner-card p {
+    color: white;
+}
