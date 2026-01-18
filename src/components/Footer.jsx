@@ -88,7 +88,7 @@ const Footer = () => {
                 <h3 className='text-lg text-white mb-4'>Contact</h3>
                 <ul className='grid grid-cols-2 space-y-3 text-sm'>
                     <li>mdr106123@gmail.com</li>
-                    <li>📍Jharkhand, India</li>
+                    <li>📍Deoghar,Jharkhand, India</li>
                 </ul>
 
                 <div className='flex gap-14 md:gap-4 mt-6'>
