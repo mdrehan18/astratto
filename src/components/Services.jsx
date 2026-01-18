@@ -2,6 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+ 
+
 // Swiper CSS
 import "swiper/css";
 import "swiper/css/navigation";
@@ -46,7 +48,7 @@ const Services = () => {
         </Swiper>
 
         {/* About section */}
-        <div className="flex flex-col items-center text-center gap-5 mt-14 px-6">
+        <div className="flex flex-col items-center text-center gap-5 mt-14 px-0.5">
           <h2 className="text-sm uppercase tracking-[0.3em] text-purple-800">
             • About Astratto
           </h2>
