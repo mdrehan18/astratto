@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./ui/Button";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/headerlogo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
         {/* Center Logo */}
         <div className="flex justify-center items-center gap-2">
           <img
-            src="/abstratto-header logo.png"
+            src={logo}
             alt="logo"
             className="w-10 md:w-12 object-contain"
           />

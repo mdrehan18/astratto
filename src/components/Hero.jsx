@@ -1,5 +1,7 @@
 import Button from "./ui/Button";
 import InterActiveSpan from "./ui/InterActiveSpan";
+import hero1 from "../assets/hero-first-img.png";
+import hero2 from "../assets/hero-second-img.png";
 
 const Hero = () => {
   return (
@@ -7,16 +9,16 @@ const Hero = () => {
 
       {/* Left Floating Image */}
       <img
-        src="/hero-first-img.png"
-        alt="hero image"
+        src={hero1}
+        alt="hero 1"
         className="absolute left-1 top-[53%] md:top-[65%] w-40 md:w-90 -translate-y-1/2 animate-floatLeft 
                    opacity-50 hover:opacity-100 transition hover:scale-105"
       />
 
       {/* Right Floating Image */}
       <img
-        src="/hero-second-img.png"
-        alt="hero image second"
+        src={hero2}
+        alt="hero 2"
         className="absolute right-1 top-[95%] md:top-[90%] w-40 md:w-90 -translate-y-1/2 animate-floatRight 
                    opacity-50 hover:opacity-100 transition hover:scale-105"
       />

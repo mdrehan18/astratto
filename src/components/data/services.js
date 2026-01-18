@@ -1,95 +1,112 @@
+import branding from "../../assets/2d3d.webp";
+import uidesign from "../../assets/uidesign.avif";
+import animation from "../../assets/animation.avif";
+import webdev from "../../assets/webdev.avif";
+import mobileapp from "../../assets/mobileapp.avif";
+import brandstrategy from "../../assets/brandstrategy.webp";
+import digitalmarketing from "../../assets/digitalmarketing.webp";
+import seoopti from "../../assets/seoopti.avif";
+import socialmedia from "../../assets/socialmedia.avif";
+import contentcreation from "../../assets/contentcreation.avif";
+import photography from "../../assets/photography.avif";
+import videoproduction from "../../assets/video.avif"; 
+import ecommerce from "../../assets/ecommerce.avif";
+import illustr from "../../assets/illustr.avif"; 
+import consulting from "../../assets/consulting.avif"; 
+
+
 const services = [
   {
     id: 1,
     title: "2D/3D Branding",
     description: "We craft unique brand identities that stand out and connect emotionally.",
-    image: "/public/2d3d.webp"
+    image: branding,
   },
   {
     id: 2,
     title: "UI/UX Design",
     description: "User-centered design experiences that are clean, intuitive and engaging.",
-    image: "/public/uidesign.avif"
+    image: uidesign,
   },
   {
     id: 3,
     title: "Animation",
     description: "High-quality motion and animations that bring brands to life.",
-    image: "/public/animation.avif"
+    image: animation,
   },
   {
     id: 4,
     title: "Web Development",
     description: "Modern and responsive websites that perform seamlessly across devices.",
-    image: "/public/webdev.avif"
+    image: webdev,
 
   },
   {
     id: 5,
     title: "Mobile App Development",
     description: "Engaging and high-performance mobile applications for Android & iOS.",
-    image: "/public/mobileapp.avif"
+    image: mobileapp,
 
   },
   {
     id: 6,
     title: "Brand Strategy",
     description: "Comprehensive brand strategies to position your brand for success.",
-    image: "/public/brandstrategy.webp"
+    image: brandstrategy,
   },
   {
     id: 7,
     title: "Digital Marketing",
     description: "Effective campaigns to increase your reach and drive results online.",
-     image: "/public/digitalmarketing.webp"
+     image: digitalmarketing,
   },
   {
     id: 8,
     title: "SEO Optimization",
     description: "Improve your website’s visibility and rank higher in search engines.",
-    image: "/public/seo-opti.avif"
+    image: seoopti,
   },
   {
     id: 9,
     title: "Social Media Management",
     description: "Engaging content and campaigns to grow your social presence.",
-    image: "/public/socialmedia.avif"
+    image: socialmedia,
   },
   {
     id: 10,
     title: "Content Creation",
     description: "Creative visuals and copywriting that resonate with your audience.",
-    image: "/public/contentcreation.avif"
+    image: contentcreation,
   },
   {
     id: 11,
     title: "Photography",
     description: "Professional photography for products, events, and brand storytelling.",
-    image: "/public/photogr.avif"
+    image: photography,
   },
   {
     id: 12,
     title: "Video Production",
     description: "Compelling video content to communicate your brand story effectively.",
-    image: "/public/video1.avif"
+    image: videoproduction,
   },
   {
     id: 13,
     title: "E-commerce Solutions",
     description: "Full-featured e-commerce platforms for scalable online stores.",
-    image: "/public/ecommerce1.avif"
+    image: ecommerce,
   },
   {
     id: 14,
     title: "Illustrations",
     description: "Custom illustrations to make your brand visually unique and memorable.",
-    image: "/public/illustr.avif"
+    image: illustr,
   },
   {
     id: 15,
     title: "Consulting",
     description: "Expert advice to help you solve complex business and design challenges.",
-    image: "/public/consulting.avif"
+    image: consulting,
   }
 ];
 
